@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+    rel="stylesheet">
+    <title>FORM VOLUNTEER</title>
+    <style>
+        body {
+            margin: 0; 
+            padding: 0;
+            font-family: 'Poppins';   
+        }
+        main{
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color: rgb(114, 114, 114);margin-top: -21px;margin-bottom: -30px;">
+        <table>
+            <tr >
+                <td style="width: 20%;"><img src="image-removebg-preview (27).png" width="50%" style="margin-top: 20px;margin-left: 100px;"></td>
+
+                <td style="width: 50%;">
+                    <center>
+                    <h1 style="margin-top: 50px;color: aliceblue;">Formulir Pendaftaran Volunteer UNICEF Indonesia</h1>
+                    </center>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <main>
+        <br>
+        <strong><p style="color: rgb(0, 0, 0); text-align: center;margin-top: 30px;">Silahkan mengisi Formulir pendaftaran di bawah ini dengan baik dan benar
+            sehingga bisa mendapatkan informasi lanjutan mengenai UNICEF Indonesia</p></strong>
+    <form oninput="result.value=parseInt(a.value)">
+    <fieldset>
+        <legend>
+            Formulir
+        </legend>
+        <table  style="width: fit-content;" >
+        <tr>
+            <section>
+            <td> 
+                <label for = "firstname">Nama Depan:</label><br>
+                <input type="text" name = "namadepan" id="firstname" size="40" style="text-align: left;"><br>
+            </td>
+            <td>
+                <label for = "lastname">Nama Belakang:</label><br>
+                <input type="text" name="namabelakang" id="lastname" size="40"style="text-align: left;"><br>
+            </td>
+            </section>
+
+            <section>
+            <td style="text-align: right; width: 100%;">
+                <label for = "tanggal">Tanggal Lahir:</label><br>
+                <input type="date" name="tanggal" id="tanggal" style="height: 25px; width: fit-content;" >            
+            </td>
+            </section>
+        </tr>
+        </table>
+    
+    <table style="width: 100%;">
+    <tr>
+        <section>
+        <td>
+            <p> Jenis kelamin:
+            <input type="radio" name = "sex" value ="pria" id="pria"checked>
+            <label for = "pria">Pria</label>
+            <input type="radio" name = "sex" value ="wanita" id="wanita">
+            <label for = "wanita">Wanita</label>
+            </p>
+        </td>
+        </section>
+
+        <section>
+        <td style="text-align: right;">
+            <label for = "pilih">Pekerjaan :</label>
+            <select name = "mobil" id="pilih"  style="width: 200px;height: 30px;">
+                <option value="mhs">Mahasiswa</option>
+                <option value="bekerja" selected>Bekerja</option>
+                <option value="SMP">SMP</option>
+                <option value="SMA">SMA</option>
+            </select>
+        </td>
+        </section>
+    </tr>
+    </table>
+    
+    <section>
+    <fieldset>
+        <legend>
+            Alamat Lengkap
+        </legend>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 50%;"> 
+                    <label for = "alamat1">Alamat 1</label><br>
+                    <textarea name = "alamat1" id="alamat1" rows="5" cols="75%"></textarea><br>
+                </td>
+                <td style="width: 50%;">
+                    <label for = "alamat2">Alamat 2</label><br>
+                    <textarea name = "alamat2" id="alamat2" rows="5" cols="75%"></textarea><br>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 25%;"> 
+                    <label for = "kota">Kota</label><br>
+                    <input type="text" name = "kota" id="kota" size="35" style="text-align: left;width: 95%;"><br>
+                </td>
+                <td style="width: 25%;"> 
+                    <label for = "prov">Provinsi</label><br>
+                    <input type="text" name="provinsi" id="prov" size="35"style="text-align: left; width: 95%;"><br>
+                </td>
+                <td style="width: 25%;"> 
+                    <label for = "kode">Kode Pos</label><br>
+                    <input type="text" name="kodepos" id="kode" size="20"style="text-align: left;width: 95%;"><br>
+                </td>
+                <td style="width: 25%;"> 
+                    <label for = "negara">Negara</label><br>
+                    <input type="text" name="negara" id="negara" size="20"style="text-align: left;width: 95%;"><br>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+    </section>
+    
+    <br>
+    <hr style="border: 5px solid rgb(149, 215, 253);">
+    <section>
+    <p>
+        Kemampuan yang dimiliki: <br>
+        <input type="checkbox" id="cw" name="skill" value="Copy Writing" >
+        <label for="cw" style="margin-right: 100px;">Copy Writing</label>
+        <input type="checkbox" id="sw" name="skill" value="Script Writing">
+        <label for="sw" style="margin-right: 100px;"> Script Writing</label>
+        <input type="checkbox" id="pd" name="skill" value="Publication Design">
+        <label for="pd" style="margin-right: 100px;"> Publication Design</label>
+        <input type="checkbox" id="web" name="skill" value="Website">
+        <label for="web" style="margin-right: 100px;"> Website</label>
+        <input type="checkbox" id="gd" name="skill" value="Graphic Design">
+        <label for="gd" style="margin-right: 100px;"> Graphic Design</label>
+    </p>
+    </section>
+
+    <br>
+    <section style="display: flex; justify-content: space-between;">
+        <label for="continent">Pilih Benua untuk Penempatan Volunteer: </label>
+        <input list="kontinen" name="continent" id="continent" style="width: 80%;">
+        <datalist id="kontinen" style="margin-left: 100px;">
+            <option value="Asia">
+            <option value="Afrika">
+            <option value="Eropa">
+            <option value="Australia">
+            <option value="Amerika Utara">
+            <option value="Amerika Selatan">
+            <option value="Antartika">
+        </datalist>
+    </section>  
+    
+    <br>
+    <section>  
+        <p>Seberapa besar kesediaan untuk menjadi volunteer : 
+        <input type="range" min="0" max="100" value="50" id="a">
+        <output for="a" id="result">50</output>%
+        </p> 
+    </section> 
+
+    <section style="display: flex; justify-content: space-between;">
+        <label for="hobi">Hobiku : </label>
+        <select name="hobby" id="hobi" style="width: 90%;">
+          <optgroup label="Seni">
+            <option value="gambar">Menggambar</option>
+            <option value="menari">Menari</option>
+            <option value="menyanyi">Menyanyi</option>
+          </optgroup>
+          <optgroup label="Olahraga">
+            <option value="marathon">Marathon</option>
+            <option value="Berenang">Berenang</option>
+            <option value="Panah">Memanah</option>
+          </optgroup>
+          <optgroup label="Lainnya">
+            <option value="lain">Lainnya</option>
+          </optgroup>
+        </select>
+    </section>
+
+    <br>
+    <section>
+        <p>
+        Upload Foto Formal :
+        <input type="file">
+        </p>
+    </section>
+
+    </fieldset>
+    <button type="submit" style="width: 100%; height: 60px;color: lightblue;background-color: rgb(72, 72, 72);font-size: larger;margin-top: 10px;"><strong>Submit</strong></button>
+    </form>
+    </main>
+    </body>
+</html>
